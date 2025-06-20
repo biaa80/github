@@ -18,7 +18,7 @@ if (!defined('ABSPATH'))
 
 /**caminho no sever para o sistema */
 if (!defined('BASEURL'))
-    define('BASEURL', '/crud/');
+    define('BASEURL', '/Beatriz_2_PHP/Djonatan/github/crud/');
 
 /**caminho do arquivo da banco de dados */
 if (!defined('DBAPI'))
@@ -26,7 +26,12 @@ if (!defined('DBAPI'))
 
 /**remove todas as mensagens armazenadas em uma sessão */
 function clears_messages() {
-    if (isset($_SESSION['MESSAGES'])) {
+    if (isset($_SESSION['messages'])) {
         unset($_SESSION['messages']);
     }
 }
+
+/** caminhos dos templates de header e footer **/
+define('HEADER_TEMPLATE', ABSPATH . 'inc/header.php');
+define('FOOTER_TEMPLATE', ABSPATH . 'inc/footer.php');
+?>
