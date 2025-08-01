@@ -21,3 +21,5 @@ function add() {
         header('location: index.php');
     }
 }
+
+?>
