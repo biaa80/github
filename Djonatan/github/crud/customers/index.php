@@ -45,7 +45,9 @@
                     <td><?php echo $customer['id']; ?></td>
                     <td><?php echo $customer['name']; ?></td>
                     <td><?php echo $customer['cpf']; ?></td>
-                    <td>00 0000-0000</td>
+                    <?php echo formataCEP($customer['zip_code']); ?> 
+                    <?php echo formataTelefone($customer['phone']); ?> 
+                    <?php echo formataTelefone($customer['mobile']); ?> 
                     <td><?php echo $customer['modified']; ?></td>
                     <td class="actions text-right">
                         <a href="view.php?id=<?php echo $customer['id']; ?>" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>
@@ -63,5 +65,6 @@
         <?php endif; ?>
     </tbody>
 </table>
+<?php include('modal.php'); ?> 
  
 <?php include(FOOTER_TEMPLATE); ?>

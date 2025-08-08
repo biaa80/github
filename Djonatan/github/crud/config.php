@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 /**nome do banco de dados */
 define('DB_NAME', 'senac_crud');
@@ -25,7 +26,7 @@ if (!defined('DBAPI'))
     define('DBAPI', ABSPATH . 'inc/datebase.php');
 
 /**remove todas as mensagens armazenadas em uma sessão */
-function clears_messages() {
+function clear_messages() {
     if (isset($_SESSION['messages'])) {
         unset($_SESSION['messages']);
     }
