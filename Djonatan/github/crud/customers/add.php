@@ -1,92 +1,91 @@
 <?php
-    require_once('functions.php');
+    require_once('functions.php'); 
     add();  
 ?>  
 <?php include(HEADER_TEMPLATE); ?>  
- 
-<h2>Novo Cliente</h2>  
- 
-<form action="add.php" method="post">
-    <!-- area de campos do form -->
-    <hr/>
- 
-    <div class="row">
-        <div class="form-group col-md-6">
-            <label for="campo1">Nome completo</label>
-            <input type="text" class="form-control" name="customer['name']">
-        </div>
-        <div class="form-group col-md-2">
-            <label for="campo2">Sexo</label>
-            <select class="form-control" id="campo2" name="customer['sex']">
-                <option value="" disabled selected>Selecione</option>
-                <option value="M">Masculino</option>
-                <option value="F">Feminino</option>
-            </select>
-        </div>
-        <div class="form-group col-md-2">
-            <label for="campo3">CPF</label>
-            <input type="text" class="form-control" name="customer['cpf']">
-        </div>
-        <div class="form-group col-md-2">
-            <label for="campo4">Data de Nascimento</label>
-            <input type="date" class="form-control" name="customer['birthdate']">
-        </div>
-    </div>
- 
-    <div class="row">
-        <div class="form-group col-md-2">
-            <label for="campo3">CEP</label>
-            <input type="text" class="form-control" name="customer['zip_code']">
-        </div>
-        <div class="form-group col-md-8">
-            <label for="campo1">Endereço</label>
-            <input type="text" class="form-control" name="customer['address']">
-        </div>
-        <div class="form-group col-md-2">
-            <label for="campo1">Número</label>
-            <input type="text" class="form-control" name="customer['number']">
-        </div>
-    </div>
- 
-    <div class="row">
-        <div class="form-group col-md-5">
-            <label for="campo2">Complemento</label>
-            <input type="text" class="form-control" name="customer['complement']">
-        </div>    
-        <div class="form-group col-md-3">
-            <label for="campo2">Bairro</label>
-            <input type="text" class="form-control" name="customer['hood']">
-        </div>
-        <div class="form-group col-md-3">
-            <label for="campo1">Município</label>
-            <input type="text" class="form-control" name="customer['city']">
-        </div>
-        <div class="form-group col-md-1">
-            <label for="campo3">UF</label>
-            <input type="text" class="form-control" name="customer['state']">
-        </div>
-    </div>  
- 
-    <div class="row">        
-        <div class="form-group col-md-2">
-            <label for="campo2">Telefone</label>
-            <input type="text" class="form-control" name="customer['phone']">
-        </div>  
-        <div class="form-group col-md-2">
-            <label for="campo3">Celular</label>
-            <input type="text" class="form-control" name="customer['mobile']">
-        </div>
-    </div>
-   
-    <div id="actions" class="row">
-        <div class="col-md-10">
-            <button type="submit" class="btn btn-primary">Salvar</button>
-            <a href="index.php" class="btn btn-default">Cancelar</a>
-        </div>
-    </div>
- 
-    <input type="hidden" name="customer['created']" disabled>
-</form>  
- 
-<?php include(FOOTER_TEMPLATE); ?>
 
+<h2>Novo Cliente</h2>  
+
+<form action="add.php" method="post"> 
+    <!-- area de campos do form --> 
+    <hr/> 
+
+    <div class="row"> 
+        <div class="form-group col-md-6"> 
+            <label for="campo1">Nome completo</label> 
+            <input type="text" class="form-control" name="customer['name']"> 
+        </div> 
+        <div class="form-group col-md-2"> 
+            <label for="campo2">Sexo</label> 
+            <select class="form-control" id="campo2" name="customer['sex']"> 
+                <option value="" disabled selected>Selecione</option> 
+                <option value="M">Masculino</option> 
+                <option value="F">Feminino</option> 
+            </select> 
+        </div> 
+        <div class="form-group col-md-2"> 
+            <label for="campo3">CPF</label> 
+            <input type="text" class="form-control" name="customer['cpf']"> 
+        </div> 
+        <div class="form-group col-md-2"> 
+            <label for="campo4">Data de Nascimento</label> 
+            <input type="date" class="form-control" name="customer['birthdate']"> 
+        </div> 
+    </div> 
+
+    <div class="row"> 
+        <div class="form-group col-md-2"> 
+            <label for="campo3">CEP</label> 
+            <input type="text" class="form-control" name="customer['zip_code']"> 
+        </div> 
+        <div class="form-group col-md-8"> 
+            <label for="campo1">Endereço</label> 
+            <input type="text" class="form-control" name="customer['address']"> 
+        </div> 
+        <div class="form-group col-md-2"> 
+            <label for="campo1">Número</label> 
+            <input type="text" class="form-control" name="customer['number']"> 
+        </div> 
+    </div> 
+
+    <div class="row"> 
+        <div class="form-group col-md-5"> 
+            <label for="campo2">Complemento</label> 
+            <input type="text" class="form-control" name="customer['complement']"> 
+        </div>     
+        <div class="form-group col-md-3"> 
+            <label for="campo2">Bairro</label> 
+            <input type="text" class="form-control" name="customer['hood']"> 
+        </div> 
+        <div class="form-group col-md-3"> 
+            <label for="campo1">Município</label> 
+            <input type="text" class="form-control" name="customer['city']"> 
+        </div> 
+        <div class="form-group col-md-1"> 
+            <label for="campo3">UF</label> 
+            <input type="text" class="form-control" name="customer['state']"> 
+        </div> 
+    </div>  
+
+    <div class="row">         
+        <div class="form-group col-md-2"> 
+            <label for="campo2">Telefone</label> 
+            <input type="text" class="form-control" name="customer['phone']"> 
+        </div>  
+        <div class="form-group col-md-2"> 
+            <label for="campo3">Celular</label> 
+            <input type="text" class="form-control" name="customer['mobile']"> 
+        </div> 
+    </div> 
+   
+    <div id="actions" class="row"> 
+        <div class="col-md-10"> 
+            <button type="submit" class="btn btn-primary">Salvar</button> 
+            <a href="index.php" class="btn btn-default">Cancelar</a> 
+        </div> 
+    </div> 
+
+    <input type="hidden" name="customer['created']" disabled> 
+</form>  
+
+<?php include(FOOTER_TEMPLATE); ?>

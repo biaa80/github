@@ -1,6 +1,4 @@
-/**
- * Passa os dados do cliente para o Modal, e atualiza o link para exclusão
- */
+/* Passa os dados do cliente para o Modal, e atualiza o link para exclusão */
 $('#delete-modal').on('show.bs.modal', function (event) {
   
   var button = $(event.relatedTarget);
